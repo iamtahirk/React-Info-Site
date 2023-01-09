@@ -7,4 +7,3 @@ This was my very first React follow along project and so for I'm loving it.
 
 - [Bob Ziroll](https://github.com/bobziroll)
 - [Scrimba's The Frontend Developer Career Path](https://scrimba.com/learn/frontend)
-- [Scrimba](https://scrimba.com/).
