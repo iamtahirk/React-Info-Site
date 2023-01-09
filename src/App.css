@@ -1,0 +1,86 @@
+#root {
+  max-width:550px;
+  padding: 0;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  padding: 0;
+  margin: 0 auto;
+  font-size: 16px;
+}
+
+p, h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #21222A;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo > img {
+  padding-right:8px;
+}
+
+.logo > h3 {
+  color: #61DAFB;
+  font-size: 22.2535px;
+  line-height: 27px;
+  letter-spacing: -0.05em;
+}
+
+header > p {
+  text-align: right;
+}
+
+main {
+  background-color: #282D35;
+  padding: 4em;
+
+  background-image: url(../src/assets/4691292_react_native_react_icon.png);
+  background-repeat: no-repeat;
+  background-position: right 70%;
+}
+
+/* main::after {
+  content: url(./assets/4691292_react_native_react_icon.png);
+  position: absolute;
+  z-index: 0;
+  white-space: nowrap;
+  top:135px;
+  right:408px;
+} */
+
+main > h1 {
+  font-size: 40px;
+  line-height: 48px;
+  color: #ffffff;
+  letter-spacing: -0.05em;
+  font-weight: 700;
+  margin: 0;
+}
+
+main > ul {
+  margin-top: 36px;
+  padding: 0;
+}
+
+main ul > li {
+  margin-left: 21px;
+  padding-left: 4px;
+}
+
+main ul > li::marker {
+  color: #61DAFB;
+  font-size: 1.4em;
+}
