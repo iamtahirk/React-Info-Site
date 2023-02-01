@@ -1,5 +1,5 @@
 #root {
-  max-width:550px;
+  max-width:55rem;
   padding: 0;
   margin: 0 auto;
   overflow-x: hidden;
@@ -9,7 +9,7 @@ body {
   font-family: 'Inter', sans-serif;
   padding: 0;
   margin: 0 auto;
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 p, h1, h2, h3, h4 {
@@ -17,11 +17,19 @@ p, h1, h2, h3, h4 {
   padding: 0;
 }
 
-header {
-  background-color: #21222A;
-  padding: 30px;
+nav {
+  position: relative;
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  background-color: #ffffff;
+  padding: 3rem;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
+
+nav.dark {
+  background-color: #21222A;
 }
 
 .logo {
@@ -29,58 +37,116 @@ header {
 }
 
 .logo > img {
-  padding-right:8px;
+  padding-right:.8rem;
 }
 
 .logo > h3 {
   color: #61DAFB;
-  font-size: 22.2535px;
-  line-height: 27px;
+  font-size: 2.2rem;
+  line-height: 2.6rem;
   letter-spacing: -0.05em;
 }
 
-header > p {
+nav > p {
   text-align: right;
 }
 
-main {
-  background-color: #282D35;
-  padding: 4em;
-
-  background-image: url(../src/assets/4691292_react_native_react_icon.png);
-  background-repeat: no-repeat;
-  background-position: right 70%;
+.theme-toggler {
+  display: flex;
+  align-items: center;
 }
 
-/* main::after {
-  content: url(./assets/4691292_react_native_react_icon.png);
-  position: absolute;
-  z-index: 0;
-  white-space: nowrap;
-  top:135px;
-  right:408px;
-} */
+.theme-toggler p {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+
+.toggle-slider {
+  width: 2.5rem;
+  height: 1.3rem;
+  background-color: #2B283A;
+  border-radius: 3rem;
+  margin-inline: .7rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid black;
+  box-sizing: content-box;
+
+  transition: all .15s ease-in-out .07s;
+}
+
+nav.dark .toggle-slider {
+  border-color: white;
+  background-color: #F5F5F5;
+  justify-content: flex-end;
+}
+
+.toggle-slider-circle {
+  height: 1.3rem;
+  width: 1.3rem;
+  background-color: white;
+  border-radius: 50%;
+}
+
+nav.dark .toggle-slider-circle {
+  background-color: black;
+}
+
+
+.toggle-light {
+  color: #2B283A;
+}
+
+nav.dark .toggle-light {
+  color: #918E9B;
+}
+
+.toggle-dark {
+  color: #D5D4D8;
+}
+
+nav.dark .toggle-dark {
+  color: #FFFFFF;
+}
+
+main {
+  padding: 4rem;
+  background-image: url(/images/react-icon-light.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  flex: 1 1 auto;
+  background-color: #ffffff;
+  color: #2B283A;
+}
+
+main.dark {
+  background-image: url(/images/react-icon-dark.png);
+  background-color: #282D35;
+  color: #ffffff;
+}
 
 main > h1 {
-  font-size: 40px;
-  line-height: 48px;
-  color: #ffffff;
+  font-size: 4rem;
+  line-height: 4.8rem;
   letter-spacing: -0.05em;
   font-weight: 700;
   margin: 0;
 }
 
 main > ul {
-  margin-top: 36px;
+  margin-top: 3.6rem;
   padding: 0;
 }
 
 main ul > li {
-  margin-left: 21px;
-  padding-left: 4px;
+  margin-left: 2.1rem;
+  padding-left: .4rem;
 }
 
 main ul > li::marker {
   color: #61DAFB;
-  font-size: 1.4em;
+  font-size: 2.1rem;
 }

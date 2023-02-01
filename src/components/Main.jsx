@@ -1,5 +1,5 @@
-export default () =>  (
-    <main>
+export default (props) =>  (
+    <main className={props.darkMode ? "dark" : ""}>
         <h1>Fun facts about React</h1>
         <ul>
             <li>Was first released in 2013</li>
